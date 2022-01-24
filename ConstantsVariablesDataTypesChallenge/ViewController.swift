@@ -38,21 +38,21 @@ var lastName = "Fontana"
         super.viewDidLoad()
         
         //MARK: - MVP
-        var firstName = "Isa"
+        let firstName = "Isa"
         
         
         //TODO: - MVP, Uncomment the line below
       mvpLabel.text = firstName
         
         //MARK: - Stretch #1 - Part II
-        var teamOne = nameOne + nameTwo
-        var teamTwo = nameThree + nameFour
+        let teamOne = nameOne + "\n" + nameTwo
+        let teamTwo = nameThree + "\n" + nameFour
         
         
       
         
 //MARK: - Stretch #2 - Part II
-        var greeting = "Hello" + titleName + firstName + lastName
+        let greeting = "Hello " +  titleName  +  firstName   +    lastName
         
 //TODO: - Stretch #1, Uncomment the line below
       stretchOneLabel.text = greeting
@@ -65,12 +65,20 @@ var lastName = "Fontana"
      stretchTwoLabel.text = "Team 1: \(teamOne)\nTeam 2: \(teamTwo)"
 
         //MARK: - Start Stretch #3 - Part II
-        var teamHighScoreOne
-        var teamHighScoreTwo
+        let gameScore1 = String(HighScoreOne)
+        let gameScore2 = String(HighScoreTwo)
+        let gameScore3 = String(HighScoreThree)
+        let gameScore4 = String(HighScoreFour)
+        
+        
+        
+        let teamHighScoreOne = gameScore1 + gameScore3
+        let teamHighScoreTwo = gameScore2 + gameScore4
+       
         
         
         //TODO: - Stretch #3, Uncomment the line below
-//        stretchThreeLabel.text = "\(teamHighScoreOne)\n\(teamHighScoreTwo)"
+    stretchThreeLabel.text = "\(teamHighScoreOne)\n\(teamHighScoreTwo)"
     }
 
 }
